@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="app">
+      <div class="boards">
+        <div class="boards__item" id="1">
+          <img src="./img/delete.png" class="delete" alt="delete" />
+          <span contenteditable="true" class="title">ввдите название</span>
+          <div class="list">
+            <div
+              class="list__item"
+              id="0"
+              draggable="true"
+              title="kill me with dblclick"
+            >
+              <div>стартовая карточка</div>
+              <div class="imgdiv">
+                <img src="./img/trash.png" alt="delet" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form none">
+            <textarea
+              class="textarea"
+              placeholder="введите название карточки"
+            ></textarea>
+            <div class="buttons">
+              <button disabled class="add__item-btn">добавить карточку</button>
+              <button class="cancel__item-btn">отмена</button>
+            </div>
+          </div>
+          <div class="add-btn"><span> + </span> добавить карточку</div>
+        </div>
+      </div>
+      <div class="button">добавить</div>
+    </div>
+
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
